@@ -1,0 +1,9 @@
+[build]
+  command = "python app.py" # 파이썬 빌드 스크립트 실행
+  publish = "public"          # 정적 파일 및 빌드 결과물 위치
+
+[context.production]
+  command = "python run.py"    # 본격적인 애플리케이션 실행
+
+[context.deploy-preview]
+  command = "python .py"  # 미리보기 빌드
